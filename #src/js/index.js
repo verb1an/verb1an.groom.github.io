@@ -7,3 +7,10 @@ function menu() {
     bar.classList.toggle('mob--active');
     html.classList.toggle('hidden');
 }
+
+function viewAfter(item) {
+    let parent = item.parentNode.parentNode
+    if(parent.classList.contains('item')) {
+        parent.children[0].classList.toggle('viewater');
+    }
+}

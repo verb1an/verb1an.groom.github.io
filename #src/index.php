@@ -21,7 +21,7 @@
                 </nav>
                 <div class="buttons">
                     <a href="" class="btn btn--nodef">Регистрация</a>
-                    <a href="" class="btn btn--def">Логин</a>
+                    <a href="" class="btn btn--def">Войти</a>
                     <div class="bar" onclick="menu()">
                         <span class="line"></span>
                         <span class="line"></span>
@@ -40,12 +40,12 @@
                             <img src="images/items/1.jpg" alt="">
                             <img src="images/items/2.jpg" alt="">
                         </div>
-                        <h4 class="name">Название 1</h4>
-                    </a>
-                    <a class="item">
-                        <div class="img">
-                            <img src="images/items/1.jpg" alt="">
-                            <img src="images/items/2.jpg" alt="">
+                        <div class="result">
+                            <input type="checkbox" name="" id="i1" onclick="viewAfter(this)">
+                            <label for="i1">
+                                <span class="before">До</span>
+                                <span class="after">После</span>
+                            </label>
                         </div>
                         <h4 class="name">Название 1</h4>
                     </a>
@@ -54,12 +54,12 @@
                             <img src="images/items/1.jpg" alt="">
                             <img src="images/items/2.jpg" alt="">
                         </div>
-                        <h4 class="name">Название 1</h4>
-                    </a>
-                    <a class="item">
-                        <div class="img">
-                            <img src="images/items/1.jpg" alt="">
-                            <img src="images/items/2.jpg" alt="">
+                        <div class="result">
+                            <input type="checkbox" name="" id="i2" onclick="viewAfter(this)">
+                            <label for="i2">
+                                <span class="before">До</span>
+                                <span class="after">После</span>
+                            </label>
                         </div>
                         <h4 class="name">Название 1</h4>
                     </a>
@@ -68,12 +68,54 @@
                             <img src="images/items/1.jpg" alt="">
                             <img src="images/items/2.jpg" alt="">
                         </div>
+                        <div class="result">
+                            <input type="checkbox" name="" id="i3" onclick="viewAfter(this)">
+                            <label for="i3">
+                                <span class="before">До</span>
+                                <span class="after">После</span>
+                            </label>
+                        </div>
                         <h4 class="name">Название 1</h4>
                     </a>
                     <a class="item">
                         <div class="img">
                             <img src="images/items/1.jpg" alt="">
                             <img src="images/items/2.jpg" alt="">
+                        </div>
+                        <div class="result">
+                            <input type="checkbox" name="" id="i4" onclick="viewAfter(this)">
+                            <label for="i4">
+                                <span class="before">До</span>
+                                <span class="after">После</span>
+                            </label>
+                        </div>
+                        <h4 class="name">Название 1</h4>
+                    </a>
+                    <a class="item">
+                        <div class="img">
+                            <img src="images/items/1.jpg" alt="">
+                            <img src="images/items/2.jpg" alt="">
+                        </div>
+                        <div class="result">
+                            <input type="checkbox" name="" id="i5" onclick="viewAfter(this)">
+                            <label for="i5">
+                                <span class="before">До</span>
+                                <span class="after">После</span>
+                            </label>
+                        </div>
+                        <h4 class="name">Название 1</h4>
+                    </a>
+                    <a class="item">
+                        <div class="img">
+                            <img src="images/items/1.jpg" alt="">
+                            <img src="images/items/2.jpg" alt="">
+                        </div>
+                        <div class="result">
+                            <input type="checkbox" name="" id="i6" onclick="viewAfter(this)">
+                            <label for="i6">
+                                <span class="before">До</span>
+                                <span class="after">После</span>
+                            </label>
                         </div>
                         <h4 class="name">Название 1</h4>
                     </a>

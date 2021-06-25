@@ -6,7 +6,7 @@
     --white-color: #ffffff;
     --dark-color: #222222;
     --red-color: #fb4b4e;
-
+    --green-color: #4cb851;
     --gray-color: #777777;
 }
 
@@ -14,6 +14,7 @@ $white-color: var(--white-color, #ffffff);
 $dark-color: var(--dark-color, #222222);
 $red-color: var(--red-color, #fb4b4e);
 $gray-color: var(--gray-color, #777777);
+$green-color: var(--green-color, #4cb851);
 
 @import 'ui.scss';
 
@@ -89,15 +90,68 @@ $gray-color: var(--gray-color, #777777);
                 object-fit: cover;
                 transition: 0.5s;
             }
+
+            &:hover{
+                img{
+                    transform: translateX(-100%);
+                }
+            }
+
+            &.viewater{
+                img{
+                    transform: translateX(-100%);
+                }
+            }
         }
 
         .name{
             color: $dark-color;
         }
 
-        &:hover{
-            img{
-                transform: translateX(-100%);
+        .result{
+            padding: 15px 5px;
+            
+            input{
+                display: none;
+
+                &:checked{
+                    & ~ label .before{
+                        background-color: $white-color;
+                        color: $dark-color;
+                    }
+                    & ~ label .after{
+                        background-color: $green-color;
+                        color: $white-color;
+                    }
+                    
+                    & + .img img{
+                        transform: translateX(-100%);
+                    }
+                }
+            }
+            label{
+                cursor: pointer;
+                color: $dark-color;
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+
+                span{
+                    padding: 5px;
+                    display: block;
+                    width: 50%;
+                    transition: 0.12s;
+
+                    &.before{
+                        background-color: $red-color;
+                        color: $white-color;
+                    }
+
+                    &.after{
+                        text-align: right;
+                    }
+                }
             }
         }
     }
